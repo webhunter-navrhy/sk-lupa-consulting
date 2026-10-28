@@ -1,0 +1,83 @@
+{% extends "_base.html" %}
+{% set titulek = 'Účtovníctvo, mzdy a dane – Stará Ľubovňa | LUPA consulting' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker">Stará Ľubovňa</p>
+      <h1>Poriadok v&nbsp;účtovníctve. <span>Pokoj pre vaše podnikanie.</span></h1>
+      <p class="lead">Kompletné účtovné a poradenské služby: daňové poradenstvo, daňová optimalizácia, jednoduché aj podvojné účtovníctvo, personalistika a mzdy.</p>
+      <div class="cta-row">
+        <a class="btn" href="#kontakt">Napíšte nám</a>
+        <a class="btn btn-ghost" href="#sluzby">Naše služby</a>
+      </div>
+    </div>
+    <aside class="lupa" aria-label="Prečo LUPA">
+      <p class="lupa-h">Pod lupou</p>
+      <ul role="list">
+        <li>Individuálny prístup ku každému klientovi</li>
+        <li>Bezplatné poradenstvo pri správe vášho podnikania</li>
+        <li>Online fakturácia a informácie o zmenách v zákonoch</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="sekce" id="sluzby">
+  <div class="wrap">
+    <h2>Služby</h2>
+    <ol role="list" class="sluzby">
+      {% for s in data.sluzby %}<li><span class="cislo">{{ '%02d' % loop.index }}</span><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ol>
+    <p class="zalozenie">Potrebujete založiť s.r.o., živnosť alebo upraviť živnosti? <a href="#kontakt">Ozvite sa nám.</a></p>
+  </div>
+</section>
+
+<section class="sekce tmava" id="o-nas">
+  <div class="wrap uzky">
+    <h2>O nás</h2>
+    <p class="citat">Našou filozofiou je individuálny prístup ku každému klientovi, preto u nás získate bezplatné poradenstvo pri správe vášho podnikania, tak aby sme šetrili Váš čas a peniaze, a to všetko efektívne, profesionálne v súlade s platnou legislatívou.</p>
+    <figure class="ref">
+      <blockquote>„Poriadok v účtovníctve je pre mňa najvyššou prioritou. Práve preto som si vybral spoločnosť LUPA Consulting. Online fakturácia a informácie o zmenách zákonoch mi uľahčujú podnikanie a ja sa tak môžem naplno venovať môjmu biznisu.“</blockquote>
+      <figcaption>ProDEGRA s.r.o.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sekce" id="cena">
+  <div class="wrap cena">
+    <div>
+      <h2>Koľko to stojí?</h2>
+      <p>Cena účtovných služieb je vždy výsledkom vzájomnej dohody. Záleží od rozsahu služieb, počtu dokladov, miery digitalizácie, výšky obratu a trhu, na ktorom podnikáte. Začínajúcim podnikateľom ponúkame zľavy.</p>
+      <p class="cena-pozn">Aktuálny cenník vám radi pošleme na požiadanie.</p>
+    </div>
+    <ul role="list" class="faktory">
+      <li>rozsah poskytovaných služieb</li>
+      <li>počet dokladov</li>
+      <li>úroveň predprípravy dokladov klientom</li>
+      <li>výška obratu</li>
+      <li>zľavy pre začínajúcich podnikateľov</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap kontakt-grid">
+    <div>
+      <h2>Kontakt</h2>
+      <address>
+        <strong>LUPA consulting, s. r. o.</strong><br>
+        Námestie generála Štefánika 528/3<br>064 01 Stará Ľubovňa
+      </address>
+      <p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+      <p class="hodiny">Otváracie hodiny: pondelok – piatok, 8:00 – 16:30</p>
+      <p class="fakt">IČO: 50504550 · DIČ: 2120349330<br>Zapísaná v Obchodnom registri Okresného súdu Prešov, oddiel Sro, vložka č. 33432/P</p>
+    </div>
+    <div class="form-box">
+      <h3>Napíšte nám</h3>
+      {% include "_formular.html" %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,18 @@
+[
+  {
+    "nazev": "Jednoduché účtovníctvo",
+    "popis": "Vedenie jednoduchého účtovníctva je určené fyzickým osobám – podnikateľom a neziskovým organizáciám."
+  },
+  {
+    "nazev": "Podvojné účtovníctvo",
+    "popis": "Pre subjekty s obšírnejšou činnosťou a tam, kde vedenie účtovníctva v režime podvojného účtovníctva vyplýva zo zákonnej povinnosti."
+  },
+  {
+    "nazev": "Personalistika a mzdy",
+    "popis": "Personálna a mzdová agenda pre všetkých, ktorí zabezpečujú svoju činnosť prostredníctvom pracovnoprávnych vzťahov."
+  },
+  {
+    "nazev": "Daňové priznania",
+    "popis": "Daňové priznania pre fyzické aj právnické osoby, SZČO, ročné zúčtovania, daň z motorových vozidiel a pod."
+  }
+]

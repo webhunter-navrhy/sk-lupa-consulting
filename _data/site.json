@@ -1,0 +1,53 @@
+{
+  "slug": "sk-lupa-consulting",
+  "nazev": "LUPA consulting, s. r. o.",
+  "url": "https://webhunter-navrhy.github.io/sk-lupa-consulting/",
+  "base": "/sk-lupa-consulting/",
+  "lang": "sk",
+  "popis": "Účtovníctvo, mzdy a daňové priznania pre podnikateľov a firmy zo Starej Ľubovne. Individuálny prístup a bezplatné poradenstvo.",
+  "navrh": true,
+  "domena": "ekonomikainak.sk",
+  "og_image": "logo.jpg",
+  "logo": "logo.png",
+  "theme_color": "#d62f2f",
+  "typ": "AccountingService",
+  "ico": "50504550",
+  "kontakt": {
+    "email": "ekonomikainak@gmail.com",
+    "telefon": "0904 542 495",
+    "adresa": {
+      "ulice": "Námestie generála Štefánika 528/3",
+      "psc": "064 01",
+      "mesto": "Stará Ľubovňa",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [
+    "Mo-Fr 08:00-16:30"
+  ],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu ekonomikainak.sk"
+  },
+  "nav": [
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "O nás",
+      "href": "#o-nas"
+    },
+    {
+      "text": "Cena",
+      "href": "#cena"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

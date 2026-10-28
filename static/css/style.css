@@ -19,7 +19,7 @@ ul[role="list"], ol[role="list"] { list-style: none; margin: 0; padding: 0; }
   --red: #d62f2f;
   --red-d: #b52424;
   --paper: #f6f3f1;
-  --drop: 2.2rem 2.2rem 0 2.2rem;
+  --drop: 6px;
   --text: #111111;
   --muted: #55504d;
   --accent: #d62f2f;
@@ -133,3 +133,32 @@ a { color: inherit; }
 }
 @media (min-width: 72rem) { .sluzby { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 40rem) { .logo img { height: 40px; } .hlavicka nav { gap: 0; } .hlavicka nav a { padding-inline: .5rem; } .hlavicka .wrap { flex-wrap: wrap; } }
+
+/* kolo 2: lupa jako obraz, světlé O nás, ploché karty */
+.lupa-art { max-width: 26rem; justify-self: center; width: 100%; }
+.lupa-art svg { width: 100%; height: auto; }
+.argumenty { margin-top: var(--space-3); display: grid; gap: .5rem; }
+.argumenty li { padding-left: 1.6rem; position: relative; font-size: var(--step-0); font-weight: 600; }
+.argumenty li::before { content: ""; position: absolute; left: 0; top: .55em; width: .7rem; height: .7rem; border-radius: 50%; background: var(--red); }
+.cta-row { margin-top: var(--space-4); }
+.hero { padding-block: clamp(2rem, 1.5rem + 3vw, 4.5rem); }
+.sluzby { gap: 0 var(--space-5); }
+.sluzby li { border: 0; border-top: 1px solid var(--text); border-radius: 0; padding: var(--space-3) 0 var(--space-4); background: transparent; }
+.sluzby li:hover { transform: none; border-top-color: var(--red); }
+.ikona { width: 28px; height: 28px; margin-bottom: var(--space-1); }
+.zalozenie { margin-top: var(--space-4); background: var(--red); color: #fff; border-radius: 6px; padding: var(--space-3) var(--space-4); display: flex; gap: var(--space-3); align-items: center; justify-content: space-between; flex-wrap: wrap; font-size: var(--step-1); font-weight: 600; }
+.zalozenie .btn { background: #fff; color: var(--red); border-color: #fff; }
+.zalozenie .btn:hover { background: var(--text); color: #fff; border-color: var(--text); }
+.svetla { background: #fff; }
+.svetla h2 { color: var(--text); }
+.ref { background: var(--paper); border: 0; border-top: 4px solid var(--red); border-radius: 6px; padding: var(--space-4); margin-top: var(--space-4); }
+.ref blockquote { color: var(--text); }
+.ref figcaption { color: var(--text); }
+.uvod { color: var(--red); font-size: 3.2rem; line-height: .5; display: block; font-weight: 600; margin-bottom: .6rem; }
+.citat { font-size: var(--step-1); line-height: 1.5; color: var(--text); }
+.pat-grid { display: grid; gap: var(--space-4); }
+.pat-grid p { margin-top: .3rem; }
+.pat-logo { background: #fff; padding: 6px 10px; border-radius: 4px; height: 56px; width: auto; }
+.paticka nav { display: flex; flex-direction: column; }
+.paticka a { color: #fff; }
+@media (min-width: 52rem) { .pat-grid { grid-template-columns: 1.1fr 1.2fr 1.2fr .6fr; } }

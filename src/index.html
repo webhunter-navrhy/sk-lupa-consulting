@@ -8,19 +8,30 @@
       <p class="kicker">Stará Ľubovňa</p>
       <h1>Poriadok v&nbsp;účtovníctve. <span>Pokoj pre vaše podnikanie.</span></h1>
       <p class="lead">Kompletné účtovné a poradenské služby: daňové poradenstvo, daňová optimalizácia, jednoduché aj podvojné účtovníctvo, personalistika a mzdy.</p>
+      <ul role="list" class="argumenty">
+        <li>Individuálny prístup ku každému klientovi</li>
+        <li>Bezplatné poradenstvo pri správe podnikania</li>
+        <li>Online fakturácia a informácie o zmenách v zákonoch</li>
+      </ul>
       <div class="cta-row">
         <a class="btn" href="#kontakt">Napíšte nám</a>
         <a class="btn btn-ghost" href="#sluzby">Naše služby</a>
       </div>
     </div>
-    <aside class="lupa" aria-label="Prečo LUPA">
-      <p class="lupa-h">Pod lupou</p>
-      <ul role="list">
-        <li>Individuálny prístup ku každému klientovi</li>
-        <li>Bezplatné poradenstvo pri správe vášho podnikania</li>
-        <li>Online fakturácia a informácie o zmenách v zákonoch</li>
-      </ul>
-    </aside>
+    <div class="lupa-art" role="img" aria-label="Lupa nad účtovnými záznamami">
+      <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+        <path d="M210 10C100 10 10 100 10 210s90 200 200 200h200V210C410 100 320 10 210 10z" fill="#d62f2f"/>
+        <circle cx="190" cy="185" r="130" fill="#fff"/>
+        <circle cx="190" cy="185" r="130" fill="none" stroke="#fff" stroke-width="0"/>
+        <path d="M285 280l75 75" stroke="#fff" stroke-width="26" stroke-linecap="round"/>
+        <g font-family="Figtree, sans-serif" font-size="21" font-weight="600" fill="#111">
+          <g stroke="#ddd6d2" stroke-width="2"><line x1="100" y1="120" x2="280" y2="120"/><line x1="100" y1="170" x2="280" y2="170"/><line x1="100" y1="220" x2="280" y2="220"/></g>
+          <path d="M100 100l8 8 14-16" fill="none" stroke="#d62f2f" stroke-width="4"/><text x="132" y="108">Účtovníctvo</text>
+          <path d="M100 150l8 8 14-16" fill="none" stroke="#d62f2f" stroke-width="4"/><text x="132" y="158">Mzdy</text>
+          <path d="M100 200l8 8 14-16" fill="none" stroke="#d62f2f" stroke-width="4"/><text x="132" y="208">Daňové priznania</text>
+        </g>
+      </svg>
+    </div>
   </div>
 </section>
 
@@ -28,18 +39,18 @@
   <div class="wrap">
     <h2>Služby</h2>
     <ol role="list" class="sluzby">
-      {% for s in data.sluzby %}<li><span class="cislo">{{ '%02d' % loop.index }}</span><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+      {% for s in data.sluzby %}<li><svg class="ikona" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5" fill="none" stroke="#d62f2f" stroke-width="2.4"/><path d="M15 15l6 6" stroke="#d62f2f" stroke-width="2.6" stroke-linecap="round"/></svg><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
     </ol>
-    <p class="zalozenie">Potrebujete založiť s.r.o., živnosť alebo upraviť živnosti? <a href="#kontakt">Ozvite sa nám.</a></p>
+    <div class="zalozenie"><p>Potrebujete založiť s.r.o., živnosť alebo upraviť živnosti?</p><a class="btn" href="#kontakt">Ozvite sa nám</a></div>
   </div>
 </section>
 
-<section class="sekce tmava" id="o-nas">
+<section class="sekce svetla" id="o-nas">
   <div class="wrap uzky">
     <h2>O nás</h2>
     <p class="citat">Našou filozofiou je individuálny prístup ku každému klientovi, preto u nás získate bezplatné poradenstvo pri správe vášho podnikania, tak aby sme šetrili Váš čas a peniaze, a to všetko efektívne, profesionálne v súlade s platnou legislatívou.</p>
     <figure class="ref">
-      <blockquote>„Poriadok v účtovníctve je pre mňa najvyššou prioritou. Práve preto som si vybral spoločnosť LUPA Consulting. Online fakturácia a informácie o zmenách zákonoch mi uľahčujú podnikanie a ja sa tak môžem naplno venovať môjmu biznisu.“</blockquote>
+      <blockquote><span class="uvod" aria-hidden="true">„</span>Poriadok v účtovníctve je pre mňa najvyššou prioritou. Práve preto som si vybral spoločnosť LUPA Consulting. Online fakturácia a informácie o zmenách zákonoch mi uľahčujú podnikanie a ja sa tak môžem naplno venovať môjmu biznisu.</blockquote>
       <figcaption>ProDEGRA s.r.o.</figcaption>
     </figure>
   </div>

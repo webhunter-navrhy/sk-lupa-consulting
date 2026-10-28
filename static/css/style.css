@@ -170,3 +170,10 @@ a { color: inherit; }
 .o-nas .ref { margin-top: 0; }
 .podpis { margin-top: var(--space-3); font-weight: 600; color: var(--red); }
 @media (min-width: 52rem) { .o-nas { grid-template-columns: 1.2fr 1fr; } }
+/* kolo 4 (Opus): čitelnější argumenty, těsnější rytmus */
+.argumenty { gap: .6rem; }
+.argumenty li { font-size: 1.125rem; line-height: 1.5; }
+.sekce { padding-block: clamp(2rem, 1.5rem + 2.5vw, 4rem); }
+.sluzby li { padding-bottom: var(--space-3); }
+.zalozenie { margin-top: var(--space-3); }
+.ref { padding: var(--space-3) var(--space-4); }

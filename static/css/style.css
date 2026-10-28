@@ -177,3 +177,4 @@ a { color: inherit; }
 .sluzby li { padding-bottom: var(--space-3); }
 .zalozenie { margin-top: var(--space-3); }
 .ref { padding: var(--space-3) var(--space-4); }
+@media (max-width: 40rem) { .lupa-art { max-width: 220px; } .sekce { padding-block: 3rem; } .sekce h2 { margin-top: 0; } }

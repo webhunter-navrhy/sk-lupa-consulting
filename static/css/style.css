@@ -162,3 +162,11 @@ a { color: inherit; }
 .paticka nav { display: flex; flex-direction: column; }
 .paticka a { color: #fff; }
 @media (min-width: 52rem) { .pat-grid { grid-template-columns: 1.1fr 1.2fr 1.2fr .6fr; } }
+
+/* kolo 3: hustší rytmus */
+.sekce { padding-block: clamp(2.5rem, 2rem + 3vw, 4.5rem); }
+.argumenty li { font-weight: 400; font-size: 1rem; }
+.o-nas { display: grid; gap: var(--space-4); align-items: start; }
+.o-nas .ref { margin-top: 0; }
+.podpis { margin-top: var(--space-3); font-weight: 600; color: var(--red); }
+@media (min-width: 52rem) { .o-nas { grid-template-columns: 1.2fr 1fr; } }

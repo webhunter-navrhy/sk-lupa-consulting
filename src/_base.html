@@ -38,7 +38,7 @@
   <div class="wrap pat-grid">
     <div><img src="{{ base }}logo.png" alt="{{ site.nazev }}" height="48" class="pat-logo"></div>
     <div><p><strong>{{ site.nazev }}</strong></p><p>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p><p>IČO {{ site.ico }}</p></div>
-    <div><p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p><p><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p><p>Po–Pi 8:00 – 16:30</p></div>
+    <div><p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p><p><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p><p>Po–Pi 8:00 – 16:00</p></div>
     <nav aria-label="Pätička">{% for n in site.nav %}<a href="{{ url('') }}{{ n.href }}">{{ n.text }}</a>{% endfor %}</nav>
   </div>
 </footer>

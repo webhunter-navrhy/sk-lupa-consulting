@@ -178,3 +178,13 @@ a { color: inherit; }
 .zalozenie { margin-top: var(--space-3); }
 .ref { padding: var(--space-3) var(--space-4); }
 @media (max-width: 40rem) { .lupa-art { max-width: 220px; } .sekce { padding-block: 3rem; } .sekce h2 { margin-top: 0; } }
+
+.cennik { background: var(--paper); border-radius: var(--drop); padding: var(--space-3) var(--space-4); }
+.cennik h3 { margin: var(--space-3) 0 var(--space-2); font-size: 1.05rem; }
+.cennik h3:first-child { margin-top: 0; }
+.cennik table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.cennik th, .cennik td { text-align: left; padding: .55rem .4rem; border-bottom: 1px solid var(--line); }
+.cennik th { font-weight: 600; }
+.cennik .polozky li { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid var(--line); }
+.cennik .polozky b { white-space: nowrap; }
+.cennik .pozn { font-size: .9rem; margin-top: var(--space-2); color: var(--muted); }

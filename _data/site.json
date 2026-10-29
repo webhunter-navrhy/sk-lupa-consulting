@@ -13,8 +13,8 @@
   "typ": "AccountingService",
   "ico": "50504550",
   "kontakt": {
-    "email": "ekonomikainak@gmail.com",
-    "telefon": "0904 542 495",
+    "email": "info@ekonomikainak.sk",
+    "telefon": "0948 279 140",
     "adresa": {
       "ulice": "Námestie generála Štefánika 528/3",
       "psc": "064 01",
@@ -23,7 +23,7 @@
     }
   },
   "oteviraci_doba": [
-    "Mo-Fr 08:00-16:30"
+    "Mo-Fr 08:00-16:00"
   ],
   "sameas": [],
   "cenove_rozpeti": "",

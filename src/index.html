@@ -55,17 +55,43 @@
 <section class="sekce" id="cena">
   <div class="wrap cena">
     <div>
-      <h2>Koľko to stojí?</h2>
-      <p>Cena účtovných služieb je vždy výsledkom vzájomnej dohody. Záleží od rozsahu služieb, počtu dokladov, miery digitalizácie, výšky obratu a trhu, na ktorom podnikáte. Začínajúcim podnikateľom ponúkame zľavy.</p>
-      <p class="cena-pozn">Aktuálny cenník vám radi pošleme na požiadanie.</p>
+      <h2>Cenník</h2>
+      <p>Cena je vždy výsledkom vzájomnej dohody. Záleží od rozsahu služieb, počtu dokladov, úrovne predprípravy dokladov klientom, výšky obratu a trhu, na ktorom podnikáte. Začínajúcim podnikateľom ponúkame zľavy.</p>
+      <p class="cena-pozn">Ceny sú uvedené bez DPH, cenník platný od 1. 1. 2026.</p>
     </div>
-    <ul role="list" class="faktory">
-      <li>rozsah poskytovaných služieb</li>
-      <li>počet dokladov</li>
-      <li>úroveň predprípravy dokladov klientom</li>
-      <li>výška obratu</li>
-      <li>zľavy pre začínajúcich podnikateľov</li>
-    </ul>
+    <div class="cennik">
+      <h3>Vedenie účtovníctva (mesačný paušál)</h3>
+      <table>
+        <thead><tr><th>Počet položiek</th><th>Jednoduché (SZČO)</th><th>Podvojné (s.r.o.)</th></tr></thead>
+        <tbody>
+          <tr><td>0 – 50</td><td>od 60 €</td><td>od 80 €</td></tr>
+          <tr><td>51 – 100</td><td>od 100 €</td><td>od 120 €</td></tr>
+          <tr><td>101 – 150</td><td>od 140 €</td><td>od 160 €</td></tr>
+        </tbody>
+      </table>
+      <p class="pozn">Paušál neplatcu DPH; pre platcov DPH je o 20 € vyšší. Vyššie počty položiek podľa dohody.</p>
+      <h3>Mzdy a personalistika</h3>
+      <ul role="list" class="polozky">
+        <li><span>Mzdy, mesačne za zamestnanca (1 – 10 zamestnancov)</span><b>15 €</b></li>
+        <li><span>Mzdy, mesačne za zamestnanca (11 a viac)</span><b>14 €</b></li>
+        <li><span>Registrácia zamestnávateľa (prvotná)</span><b>35 €</b></li>
+      </ul>
+      <h3>Daňové priznania</h3>
+      <ul role="list" class="polozky">
+        <li><span>Fyzická osoba – typ A tuzemsko</span><b>60 €</b></li>
+        <li><span>Fyzická osoba – typ B</span><b>od 120 €</b></li>
+        <li><span>Právnická osoba (DPPO) vrátane príloh</span><b>od 250 €</b></li>
+        <li><span>Daň z motorových vozidiel</span><b>45 €</b></li>
+      </ul>
+      <h3>Ostatné služby</h3>
+      <ul role="list" class="polozky">
+        <li><span>Konzultácia</span><b>35 € / hod.</b></li>
+        <li><span>Zavedenie novej firmy</span><b>35 €</b></li>
+        <li><span>Registrácia za platiteľa DPH</span><b>od 150 €</b></li>
+        <li><span>Založenie s.r.o., zmeny v s.r.o.</span><b>od 150 €</b></li>
+      </ul>
+      <p class="pozn">Úplný cenník s ďalšími položkami vám radi pošleme.</p>
+    </div>
   </div>
 </section>
 
@@ -78,7 +104,7 @@
         Námestie generála Štefánika 528/3<br>064 01 Stará Ľubovňa
       </address>
       <p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
-      <p class="hodiny">Otváracie hodiny: pondelok – piatok, 8:00 – 16:30</p>
+      <p class="hodiny">Otváracie hodiny: pondelok – piatok, 8:00 – 16:00</p>
       <p class="fakt">IČO: 50504550 · DIČ: 2120349330<br>Zapísaná v Obchodnom registri Okresného súdu Prešov, oddiel Sro, vložka č. 33432/P</p>
     </div>
     <div class="form-box">
